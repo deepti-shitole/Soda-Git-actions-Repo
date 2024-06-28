@@ -2,16 +2,13 @@ data_source TestData:
      type: snowflake
      username: ${ SNOWFLAKE_USERNAME }
      password: ${ SNOWFLAKE_PASSWORD }
-     account: ${ SNOWFLAKE_ACCOUNT } 
      database: Test
+     schema: Test_Schema
      warehouse: compute_wh
      role: ACCOUNTADMIN
-     session_parameters:
-       QUERY_TAG: soda-queries
-       QUOTED_IDENTIFIERS_IGNORE_CASE: false
-     schema: public
+
       
    soda_cloud:
      host: cloud.us.soda.io
-     api_key_id: ${ SODA_CLOUD_API_KEY }
+     api_key_id: ${ SODA_API_KEY }
      api_key_secret: ${ SODA_CLOUD_API_SECRET } 
