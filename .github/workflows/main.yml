@@ -13,15 +13,25 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v3
 
-      - name: Perform Soda Scan
-        uses: sodadata/soda-github-action@v1
-        env:
-          SODA_API_KEY: ${{ secrets.SODA_API_KEY }}
-          SODA_CLOUD_API_SECRET: ${{ secrets.SODA_CLOUD_API_SECRET }}
-          SNOWFLAKE_USERNAME: ${{ secrets.SNOWFLAKE_USERNAME }}
-          SNOWFLAKE_PASSWORD: ${{ secrets.SNOWFLAKE_PASSWORD }}
+      - name: Soda Library Action
+        uses: sodadata/soda-github-action@v1.0.2
         with:
-          soda_library_version: v1.0.4
-          data_source: snowflake
-          configuration: ./configuration.yaml
-          checks: ./checks.yaml
+         soda_library_version: v1.0.4
+         data_source: snowflake
+         configuration: ./configuration.yaml
+         checks: ./checks.yaml
+
+      - name: Perform Soda Scan
+        uses: sodadata/soda-github-action@main
+        env:
+         SODA_API_KEY: ${{ secrets.SODA_API_KEY }}
+         SODA_CLOUD_API_SECRET: ${{ secrets.SODA_CLOUD_API_SECRET }}
+         SNOWFLAKE_USERNAME: ${{ secrets.SNOWFLAKE_USERNAME }}
+         SNOWFLAKE_PASSWORD: ${{ secrets.SNOWFLAKE_PASSWORD }}
+        with:
+         soda_library_version: v1.0.4
+         data_source: snowflake_api_marts
+         configuration: ./soda/configuration.yml
+         checks: ./soda/checks.yml
+              
+
