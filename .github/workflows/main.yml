@@ -19,7 +19,7 @@ jobs:
         uses: sodadata/soda-github-action@v1.0.2
         with:
          soda_library_version: v1.0.4
-         data_source: TestData
+         data_source: test_data
          configuration: ./Soda/configuration.yml
          checks: ./Soda/checks.yml
      
