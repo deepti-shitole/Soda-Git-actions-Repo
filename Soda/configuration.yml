@@ -1,11 +1,11 @@
-data_source my_datasource_name:
+data_source TestData:
      type: snowflake
-     username: ${ SNOWFLAKE_USER }
-     password: ${ SNOWFLAKE_PASS }
+     username: ${ SNOWFLAKE_USERNAME }
+     password: ${ SNOWFLAKE_PASSWORD }
      account: ${ SNOWFLAKE_ACCOUNT } 
-     database: sodadata_test
+     database: Test
      warehouse: compute_wh
-     role: analyst
+     role: ACCOUNTADMIN
      session_parameters:
        QUERY_TAG: soda-queries
        QUOTED_IDENTIFIERS_IGNORE_CASE: false
