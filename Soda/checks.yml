@@ -1,7 +1,5 @@
  checks for My_Table
-   # Checks that dataset contains rows
      - row_count > 0:
          name: Dataset contains data
-   # Checks that column contains no NULL values
      - missing_count(Num) = 0:
          name: No NULL values
