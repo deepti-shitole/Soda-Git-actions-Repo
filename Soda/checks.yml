@@ -1,5 +1,11 @@
- checks for My_Table
-     - row_count > 0:
-         name: Dataset contains data
-     - missing_count(Num) = 0:
-         name: No NULL values
+checks:
+  - name: Dataset contains data
+    condition: row_count > 0
+    target:
+      table: My_Table
+
+  - name: No NULL values in Num column
+    condition: missing_count(Num) = 0
+    target:
+      table: My_Table
+      column: Num
