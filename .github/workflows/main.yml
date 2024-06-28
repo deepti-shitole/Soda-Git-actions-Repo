@@ -1,6 +1,12 @@
   
 name: Scan for data quality
-on: pull_request
+on:
+  pull_request:
+    branches:
+      - main  # Adjust the branch name as needed
+  push:
+    branches:
+      - main 
 jobs:
   soda_scan:
     runs-on: ubuntu-latest
