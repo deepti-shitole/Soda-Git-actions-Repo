@@ -14,8 +14,8 @@ jobs:
         with:
          soda_library_version: v1.0.4
          data_source: snowflake
-         configuration: ./configuration.yaml
-         checks: ./checks.yaml
+         configuration: .Soda/configuration.yaml
+         checks: .Soda/checks.yaml
 
       - name: Perform Soda Scan
         uses: sodadata/soda-github-action@main
