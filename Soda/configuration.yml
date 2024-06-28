@@ -1,4 +1,4 @@
-data_source TestData:
+data_source test_data:
      type: snowflake
      username: ${ SNOWFLAKE_USERNAME }
      password: ${ SNOWFLAKE_PASSWORD }
