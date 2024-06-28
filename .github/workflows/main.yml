@@ -25,9 +25,9 @@ jobs:
          SNOWFLAKE_USERNAME: ${{ secrets.SNOWFLAKE_USERNAME }}
          SNOWFLAKE_PASSWORD: ${{ secrets.SNOWFLAKE_PASSWORD }}
         with:
-         soda_library_version: v1.0.4
-         data_source: snowflake_api_marts
-         configuration: ./soda/configuration.yml
-         checks: ./soda/checks.yml
+          soda_library_version: v1.0.4
+          data_source: snowflake
+          configuration: .Soda/configuration.yaml
+          checks: .Soda/checks.yaml
               
 
