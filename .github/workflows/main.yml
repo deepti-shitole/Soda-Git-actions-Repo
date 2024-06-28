@@ -14,8 +14,8 @@ jobs:
         with:
          soda_library_version: v1.0.4
          data_source: TestData
-         configuration: .Soda/configuration.yaml
-         checks: .Soda/checks.yaml
+         configuration: .Soda/configuration.yml
+         checks: .Soda/checks.yml
 
       - name: Perform Soda Scan
         uses: sodadata/soda-github-action@main
