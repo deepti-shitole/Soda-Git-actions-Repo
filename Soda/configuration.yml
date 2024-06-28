@@ -6,9 +6,7 @@ data_source TestData:
      schema: Test_Schema
      warehouse: compute_wh
      role: ACCOUNTADMIN
-
-      
-   soda_cloud:
+soda_cloud:
      host: https://cloud.soda.io
      api_key_id: ${ SODA_API_KEY }
      api_key_secret: ${ SODA_CLOUD_API_SECRET } 
