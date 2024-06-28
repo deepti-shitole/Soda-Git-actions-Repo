@@ -9,13 +9,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v3
 
-      - name: Soda Library Action
-        uses: sodadata/soda-github-action@v1.0.2
-        with:
-         soda_library_version: v1.0.4
-         data_source: TestData
-         configuration: .Soda/configuration.yml
-         checks: .Soda/checks.yml
+      
 
       - name: Perform Soda Scan
         uses: sodadata/soda-github-action@main
