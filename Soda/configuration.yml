@@ -1,7 +1,7 @@
 data_source test_data:
      type: snowflake
-     username: Deepti11
-     password: Snowflake@1$11
+     username:  ${SNOWFLAKE_USERNAME}
+     password:  ${SNOWFLAKE_PASSWORD}
      account: xd44007.ap-southeast-1
      database: Test
      schema: Test_Schema
@@ -10,6 +10,6 @@ data_source test_data:
      
 soda_cloud:
      host: cloud.soda.io
-     api_key_id: 0c69895e-7acb-4f8f-a58a-e897ca7a1922
-     api_key_secret: LU1H2Yu1FKpXAR8Fhatcoi_0ZatKbA-WyAO7Okpk6ny7w6VYr_g6LQ 
+     api_key_id: ${SODA_CLOUD_API_KEY}
+     api_key_secret: ${SODA_CLOUD_API_KEY}
      
