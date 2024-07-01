@@ -2,7 +2,7 @@ data_source test_data:
      type: snowflake
      username: Deepti11
      password: Snowflake@1$11
-     account: XC41408
+     account: xd44007.ap-southeast-1
      database: Test
      schema: Test_Schema
      warehouse: compute_wh
