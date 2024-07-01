@@ -22,7 +22,7 @@ jobs:
       - name: Install dependencies
         run: |
          pip install --upgrade pip
-         pip install soda-python pyarrow<10.1.0,>=10.0.1  # Adjust versions as needed
+         pip install soda-python pyarrow<10.1.0
      
 
       - name: Soda Library Action
