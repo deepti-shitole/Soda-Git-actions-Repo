@@ -1,4 +1,4 @@
 checks for my_table:
-  - row_count > 0
-  - missing_count(Num) < 3
+  - row_count > 4
+  - missing_count(Num) > 1
 
