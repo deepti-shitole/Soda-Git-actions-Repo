@@ -1,12 +1,12 @@
 data_source test_data:
      type: snowflake
-     username: ${ SNOWFLAKE_USERNAME }
-     password: ${ SNOWFLAKE_PASSWORD }
+     username: Deepti11
+     password: Snowflake@1$11 
      database: Test
      schema: Test_Schema
      warehouse: compute_wh
      role: ACCOUNTADMIN
 soda_cloud:
      host: cloud.us.soda.io
-     api_key_id: ${ SODA_CLOUD_API_KEY }
-     api_key_secret: ${ SODA_CLOUD_API_SECRET } 
+     api_key_id: 1942e95c-25c5-415c-b369-01be79d16ba4
+     api_key_secret: r9T0iizPHKndz0rReBNAsAHCKV0SN7clPUE3l4TY0ddomZfcKl8bzw 
