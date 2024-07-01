@@ -8,5 +8,5 @@ data_source test_data:
      role: ACCOUNTADMIN
 soda_cloud:
      host: cloud.us.soda.io
-     api_key_id: ${ SODA_API_KEY }
+     api_key_id: ${ SODA_CLOUD_API_KEY }
      api_key_secret: ${ SODA_CLOUD_API_SECRET } 
