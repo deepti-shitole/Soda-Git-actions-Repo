@@ -1,4 +1,4 @@
-data_source test_data:
+data_source dbsource:
      type: snowflake
      username: Vaishnavi1
      password: Snowflake@123
