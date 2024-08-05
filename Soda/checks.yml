@@ -1,4 +1,4 @@
 checks for my_table:
   - row_count > 2
-  - missing_count(Num) < 2
+  - missing_count(Age) < 2
 
