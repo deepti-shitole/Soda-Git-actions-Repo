@@ -1,6 +1,6 @@
 data_source dbsource:
      type: snowflake
-     username: Vaishnavi1
+     username: Deepti1
      password: Snowflake@123
      account: me82430.central-india.azure
      database: Client_db
